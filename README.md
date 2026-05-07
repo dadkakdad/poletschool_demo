@@ -15,7 +15,6 @@ After enabling GitHub Pages for this repository, the app will be available at:
 - `assets/js/main.js` - client-side behavior (theme toggle, mood selection, toast)
 - `school-photo.png` - original school image used in header
 - `items/` - original buffet item images used in carousel
-- `assets/images/` - optional placeholder SVG assets
 - `config/app-config.js` - app-level configuration
 - `config/items-config.js` - buffet item configuration
 - `docs/github-pages.md` - deployment guide
