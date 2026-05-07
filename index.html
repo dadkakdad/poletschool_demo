@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Школа 2.0 — Твой день</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=clash-display@500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="topbar">
+        <div class="logo" aria-label="Фото школы">
+          <img src="school-photo.png" alt="Фото школы Полет">
+        </div>
+        <div class="title-wrap">
+          <div class="eyebrow">Школа №2 · 4Б класс</div>
+          <div class="page-title">Твой день</div>
+        </div>
+        <button class="icon-btn" data-theme-toggle aria-label="Переключить тему">🌙</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <div class="mini-card balance-alert">
+          <div class="balance-alert-head">
+            <div>
+              <div class="mini-label">Баланс питания</div>
+              <div class="mini-value">20 ₽</div>
+              <div class="mini-meta">Не хватает на обед сегодня</div>
+            </div>
+            <div class="balance-icon" aria-hidden="true">⚠️</div>
+          </div>
+          <div class="balance-request">
+            <button class="balance-main-btn" onclick="toast('Запрос на пополнение отправлен родителю')">Запросить деньги у родителя</button>
+            <div class="balance-presets">
+              <button class="balance-preset-btn" onclick="toast('Запрошено пополнение: 50 ₽')">50 ₽</button>
+              <button class="balance-preset-btn" onclick="toast('Запрошено пополнение: 100 ₽')">100 ₽</button>
+              <button class="balance-preset-btn" onclick="toast('Запрошено пополнение: 200 ₽')">200 ₽</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="section-title">Следующий урок</div>
+          <button class="link-mini" onclick="toast('Показать полное расписание за день')">Расписание</button>
+        </div>
+        <div class="card schedule-compact">
+          <div class="next-class">
+            <div class="time-badge">08:45</div>
+            <div>
+              <div class="lesson-state now">Сейчас</div>
+              <div class="next-title">Математика · кабинет 312</div>
+              <div class="next-sub">До 09:30</div>
+            </div>
+            <div class="chevron">›</div>
+          </div>
+          <div class="next-class">
+            <div class="time-badge">09:40</div>
+            <div>
+              <div class="lesson-state next">Дальше</div>
+              <div class="next-title">Английский язык</div>
+              <div class="next-sub">Кабинет 204 · 2 этаж</div>
+            </div>
+            <div class="chevron">›</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="section-title">Меню дня</div>
+          <button class="link-mini" onclick="toast('Открыть полное меню столовой')">Полное меню</button>
+        </div>
+        <div class="card canteen-card">
+          <div class="canteen-top">
+            <div class="canteen-title">Завтрак</div>
+            <div class="canteen-price">110,06 ₽</div>
+          </div>
+          <div class="canteen-list">
+            <div class="canteen-item"><span>Суп молочный с вермишелью</span></div>
+            <div class="canteen-item"><span>Соус ягодный</span></div>
+            <div class="canteen-item signature">
+              <span>Пирог творожный</span>
+              <span class="canteen-tag">Фирменное</span>
+            </div>
+            <div class="canteen-item"><span>Йогурт фруктовый</span></div>
+          </div>
+          <div class="canteen-note">Напиток на выбор: какао на молоке или чай.</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="section-title">Посмотри, что в буфете</div>
+        </div>
+        <div class="card buffet-widget">
+          <div class="buffet-carousel" aria-label="Ассортимент буфета">
+            <article class="buffet-item">
+              <img class="buffet-photo" src="items/image%20copy%202.png" alt="Мини-пицца с сосисками">
+              <div class="buffet-name">Мини-пицца с сосисками</div>
+              <div class="buffet-price">89 ₽</div>
+            </article>
+            <article class="buffet-item">
+              <img class="buffet-photo" src="items/image%20copy%203.png" alt="Вода Черноголовка 0,5 л">
+              <div class="buffet-name">Вода Черноголовка 0,5 л</div>
+              <div class="buffet-price">45 ₽</div>
+            </article>
+            <article class="buffet-item">
+              <img class="buffet-photo" src="items/image%20copy.png" alt="Крекеры Saltletts">
+              <div class="buffet-name">Крекеры Saltletts</div>
+              <div class="buffet-price">59 ₽</div>
+            </article>
+            <article class="buffet-item">
+              <img class="buffet-photo" src="items/image.png" alt="Сосиска в тесте">
+              <div class="buffet-name">Сосиска в тесте</div>
+              <div class="buffet-price">65 ₽</div>
+            </article>
+          </div>
+          <button class="buffet-cta" onclick="toast('Открыть полный ассортимент буфета')">Смотреть весь ассортимент</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="section-title">Где я</div>
+        </div>
+        <div class="card attendance-card">
+          <div class="attendance-head">
+            <div>
+              <div class="attendance-title">Время в школе сегодня</div>
+              <div class="attendance-hours">3 ч 20 мин</div>
+              <div class="attendance-sub">В школе с 07:52, сейчас 11:12</div>
+            </div>
+            <div class="pill success">На месте</div>
+          </div>
+          <div class="school-timebar" aria-hidden="true">
+            <span class="school-timebar-fill"></span>
+          </div>
+          <div class="entry-row">
+            <div class="entry-label">Входы сегодня</div>
+            <div class="entry-chips">
+              <span class="entry-chip">07:52</span>
+              <span class="entry-chip">08:38</span>
+              <span class="entry-chip">10:46</span>
+            </div>
+          </div>
+          <button class="pass-btn" onclick="toast('Одноразовый QR для прохода отправлен')">Потерял пропуск</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div class="section-title">Оцени свой день</div>
+        </div>
+        <div class="card mood-card">
+          <div class="mood-sub">Выбери настроение на сегодня</div>
+          <div class="mood-options" role="radiogroup" aria-label="Оценка дня">
+            <button class="mood-btn" type="button" data-day-emoji data-day-label="Грустно" aria-pressed="false"><span>😕</span><small>Грустно</small></button>
+            <button class="mood-btn" type="button" data-day-emoji data-day-label="Нормально" aria-pressed="false"><span>🙂</span><small>Нормально</small></button>
+            <button class="mood-btn" type="button" data-day-emoji data-day-label="Хорошо" aria-pressed="false"><span>😊</span><small>Хорошо</small></button>
+            <button class="mood-btn" type="button" data-day-emoji data-day-label="Классно" aria-pressed="false"><span>😄</span><small>Классно</small></button>
+            <button class="mood-btn" type="button" data-day-emoji data-day-label="Супер" aria-pressed="false"><span>🤩</span><small>Супер</small></button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="config/app-config.js" defer></script>
+  <script src="config/items-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
